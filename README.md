@@ -1,3 +1,3 @@
-# engine_template_csharp
+# egchecklist
 
-Skeleton for starting a new C# project
+Sample coding session for programming trainees in India March 2025
