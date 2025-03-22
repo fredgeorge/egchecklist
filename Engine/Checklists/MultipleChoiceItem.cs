@@ -9,7 +9,7 @@ using static Engine.Checklists.ItemStatus;
 namespace Engine.Checklists;
 
 // Understands selecting from a limited list
-public class MultipleChoiceItem {
+public class MultipleChoiceItem : Item{
     private readonly List<object> _choices;
     private object? _value;
 

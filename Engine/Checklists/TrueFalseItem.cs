@@ -9,14 +9,14 @@ using static Engine.Checklists.ItemStatus;
 namespace Engine.Checklists;
 
 // Understands a boolean question
-public class TrueFalseItem {
+public class TrueFalseItem : Item {
     private bool? _value;
     public ItemStatus Status() {
         if (_value == null) return Unknown;
         return (bool)_value ? Happy : Sad;
     }
 
-    public void Be(bool value) => _value = value;
+    public void Be(object value) => _value = (bool)value;
 
     public void Reset() => _value = null;
 }
